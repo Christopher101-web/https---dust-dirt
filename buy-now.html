@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bits and Bytes Online Restaraunt</title>
+         <!--- Bootstrap CSS --->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!--- Custom CSS --->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+         <div id="menu">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact-us.html">CONTACT</a>
+         </div>
+         <br/><br/><br/>
+         <div id="content">
+            <h1><strong>PLEASE ENTER YOUR BANKING DETAILS</strong></h1>
+          </div>
+        <!--- PayPal Logo --->
+        <div class="paypal">
+            <table border="0" cellpadding="10" cellspacing="0" align="center">
+                <tr><td align="center"></td></tr>
+                <tr><td align="center"><a href="https://www.paypal.com/za/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/za/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/AM_SbyPP_mc_vs_ms_ae_UK.png" border="0" alt="PayPal Acceptance Mark"></a></td></tr>
+            </table>
+        </div>
+        <!--- Bank Form --->
+          <div class="payment-details">
+            <form action="/action_page.php">
+            <div class="form-group">
+              <label for="sel1">Bank Name (select one):</label>
+              <select class="form-control" id="sel1">
+                <option>First National</option>
+                <option>Capitic</option>
+                <option>Nedbank</option>
+                <option>Standard</option>
+                <option>Other</option>
+              </select>
+            </div>
+              <div class="form-group">
+                <label for="account-number">Account number:</label>
+                <input type="account-number" class="form-control" id="accounr-number">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+              </div>
+            <div class="form-group">
+              <label for="sel1">Payment method (select one):</label>
+              <select class="form-control" id="sel1">
+                <option>Debit</option>
+                <option>Credit</option>
+                <option>EFT</option>
+                <option>APP</option>
+                <option>Other</option>
+              </select>
+            </div>
+            </form>
+        </div>
+        <br/>
+        <div class="send-link">
+              <button data-toggle="collapse" data-target="#demo">SUBMIT</button>
+        <div id="demo" class="collapse">
+            <div class="alert alert-success">
+              <strong>Success!</strong> Your transaction has been completed.
+            </div>   
+        </div>      
+        </div>
+        <!-- Scripts -->
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <script src="assets/js/isotope.min.js"></script>
+        <script src="assets/js/owl-carousel.js"></script>
+        <script src="assets/js/lightbox.js"></script>
+        <script src="assets/js/custom.js"></script>
+    </body>
+</html>    
+        
